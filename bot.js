@@ -7,7 +7,7 @@ const webhookUrl = process.env.SLACK_WEBHOOK_URL;
 const messages = {
   1: ":white_check_mark: *Monday Motivation* — Drop a checkmark if you’ve added at least 5 jobs today!\n:first_place_medal: Everyone should aim for *25 jobs by 7:30 PM* tonight!",
   2: ":date: *Tracker Tuesday* — Add 5–10 new jobs to your tracker!\n:white_check_mark: Drop a checkmark if you’ve done it!",
-  3: ":dart: *Winning Wednesday* — Everyone should have at least 10 jobs!\nDrop a target emoji if you've reached that goal!",
+  3: ":dart: *Winning Wednesday* — Everyone should have at least 10 jobs!\nDrop a :first_place_medal: emoji if you've reached that goal!",
   4: ":handshake: *Thoughtful Thursday* — Network with 2 people this week.\n:white_check_mark: Drop a checkmark if you’ve networked.\n:dart: Drop a dart if you’ve reached 20+ jobs!",
   5: ":dart: *Finish Strong Friday* — Drop a target if you’ve reached 25 jobs!\n:rocket: Keep it going this weekend!",
   6: ":briefcase: *Super Saturday* — Apply to 5 jobs today.\n:dart: Aiming for 50+ total? Drop a target emoji!",
@@ -28,8 +28,8 @@ const sendDailyMessage = async () => {
   }
 };
 
-// Schedule to run every day at 9:00 AM
-// cron.schedule('0 9 * * *', () => {
+// Schedule to run every day at 10:00 AM
+// cron.schedule('10 * * *', () => {
   sendDailyMessage();
 // });
 
