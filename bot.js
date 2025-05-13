@@ -7,12 +7,12 @@ const webhookUrl = process.env.SLACK_WEBHOOK_URL;
 
 const messages = {
   1: ":sparkles: *Monday Motivation*  \n  \n  Drop a :white_check_mark: if you’ve added at least 5 jobs today!\n:first_place_medal: Everyone should aim for *25 jobs by 7:30 PM* tonight!",
-  2: ":date: *Tracker Tuesday* \n Add 5–10 new jobs to your tracker!\n Drop a :white_check_mark: if you’ve done it!",
-  3: ":dart: *Winning Wednesday* \n  Everyone should have at least 10 jobs!\nDrop a :first_place_medal: emoji if you've reached that goal!",
-  4: ":handshake: *Thoughtful Thursday* \n  Network with 2 people this week.\n Drop a :white_check_mark: if you’ve networked.\n:dart: Drop a dart if you’ve reached 20+ jobs!",
-  5: ":dart: *Finish Strong Friday* \n  Drop a target if you’ve reached 25 jobs!\n:rocket: Keep it going this weekend!",
-  6: ":briefcase: *Super Saturday* \n  Apply to 5 jobs today.\n Aiming for 50+ total? Drop a :dart: emoji!",
-  7: ":dart: *Set-Up Sunday* \n  Add at least 5 more jobs today to get ready for the new week!\n:white_check_mark: Drop a checkmark if you did it!"
+  2: ":date: *Tracker Tuesday* \n \nAdd 5–10 new jobs to your tracker!\n Drop a :white_check_mark: if you’ve done it!",
+  3: ":dart: *Winning Wednesday* \n \n Everyone should have at least 10 jobs!\nDrop a :first_place_medal: emoji if you've reached that goal! \nDrop a :white_check_mark: if you’ve added at least 5 jobs today!",
+  4: ":thought_balloon: *Thoughtful Thursday* \n \n  Network with 2 people this week use our network activation bot '/network'.\n Drop a :handshake:  if you’ve added ata least two interacitons to your tracker.\n:dart: Drop a dart if you’ve reached 20+ jobs!",
+  5: ":dart: *Finish Strong Friday* \n  \nDrop a :dart: if you’ve reached 25 jobs!\n:rocket: Keep it going this weekend!",
+  6: ":briefcase: *Super Saturday* \n  \nApply to 5 to 10 jobs today drop a :white_check_mark: if you reached this goal.\nDrop a :muscle::skin-tone-6: if your Aiming for 50+ application by Monday",
+  7: ":dart: *Set-Up Sunday* \n \n Add at least 5 more jobs today to get ready for the new week!\n:white_check_mark: Drop a checkmark if you did it!"
 };
 
 function getRandomMotivationalQuote() {
@@ -38,9 +38,9 @@ function getRandomMotivationalQuote() {
   
 
 // ⏰ Scheduled daily at 10:00 AM
-// cron.schedule('0 10 * * *', () => {
-//   sendDailyMessage();
-// });
+cron.schedule('41 16 * * *', () => {
+    sendDailyMessage();
+  });
 
 // Uncomment below for immediate test
-sendDailyMessage(1);
+// sendDailyMessage(7);
