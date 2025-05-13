@@ -1,12 +1,206 @@
 [
-    "Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome. — Booker T. Washington",
-    "You may not control all the events that happen to you, but you can decide not to be reduced by them. — Maya Angelou",
-    "Fall seven times, stand up eight. — Japanese Proverb",
-    "I never lose. I either win or learn. — Nelson Mandela",
-    "Don't wait for opportunity. Create it.",
-    "Faith is taking the first step even when you don't see the whole staircase. — Martin Luther King Jr.",
-    "Push yourself, because no one else is going to do it for you.",
-    "Perseverance is failing 19 times and succeeding the 20th. — Julie Andrews"
-
+    {
+      "quote": "Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome.",
+      "author": "Booker T. Washington"
+    },
+    {
+      "quote": "You may not control all the events that happen to you, but you can decide not to be reduced by them.",
+      "author": "Maya Angelou"
+    },
+    {
+      "quote": "Fall seven times, stand up eight.",
+      "author": "Japanese Proverb"
+    },
+    {
+      "quote": "I never lose. I either win or learn.",
+      "author": "Nelson Mandela"
+    },
+    {
+      "quote": "Don't wait for opportunity. Create it.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Faith is taking the first step even when you don't see the whole staircase.",
+      "author": "Martin Luther King Jr."
+    },
+    {
+      "quote": "Push yourself, because no one else is going to do it for you.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Perseverance is failing 19 times and succeeding the 20th.",
+      "author": "Julie Andrews"
+    },
+    {
+      "quote": "The only way to do great work is to love what you do.",
+      "author": "Steve Jobs"
+    },
+    {
+      "quote": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt"
+    },
+    {
+      "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "author": "Winston Churchill"
+    },
+    {
+      "quote": "The future belongs to those who believe in the beauty of their dreams.",
+      "author": "Eleanor Roosevelt"
+    },
+    {
+      "quote": "If you do what you've always done, you'll get what you've always gotten.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Attitude is a little thing that makes a big difference.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "No one can make you feel inferior without your consent.",
+      "author": "Eleanor Roosevelt"
+    },
+    {
+      "quote": "Whatever the mind of man can conceive and believe, it can achieve.",
+      "author": "Napoleon Hill"
+    },
+    {
+      "quote": "The secret to getting ahead is getting started.",
+      "author": "Mark Twain"
+    },
+    {
+      "quote": "A dream doesn't become reality through magic; it takes sweat, determination, and hard work.",
+      "author": "Unknown"
+    },
+    
+    {
+        "quote": "You may encounter many defeats, but you must not be defeated.",
+        "author": "Maya Angelou"
+    },
+    {
+        "quote": "I've missed more than 9,000 shots in my career. I've lost almost 300 games. And that is why I succeed.",
+        "author": "Michael Jordan"
+    },
+    {
+        "quote": "Your crown has been bought and paid for. Put it on your head and wear it.",
+        "author": "Maya Angelou"
+    },
+    {
+        "quote": "Every great dream begins with a dreamer.",
+        "author": "Harriet Tubman"
+    },
+    {
+        "quote": "It always seems impossible until it's done.",
+        "author": "Nelson Mandela"
+    },
+    {
+        "quote": "I’m not afraid of storms, for I’m learning how to sail my ship.",
+        "author": "Louisa May Alcott"
+    },
+    {
+        "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+        "author": "Zig Ziglar"
+    },
+    {
+        "quote": "Work hard in silence. Let your success be your noise.",
+        "author": "Frank Ocean"
+    },
+    {
+        "quote": "Strength grows in the moments when you think you can't go on but you keep going anyway.",
+        "author": "Unknown"
+    },
+    {
+        "quote": "Champions keep playing until they get it right.",
+        "author": "Billie Jean King"
+    },
+    {
+        "quote": "I am my best work – a series of road maps, reports, recipes, doodles, and prayers from the front lines.",
+        "author": "Audre Lorde"
+    },
+    {
+        "quote": "Success isn’t about how much money you make. It’s about the difference you make in people’s lives.",
+        "author": "Michelle Obama"
+    },
+    {
+        "quote": "The question isn’t who is going to let me; it’s who is going to stop me.",
+        "author": "Ayn Rand"
+    },
+    {
+        "quote": "One important key to success is self-confidence. An important key to self-confidence is preparation.",
+        "author": "Arthur Ashe"
+    },
+    {
+        "quote": "I thrive on obstacles. If I’m told that it can’t be told, then I push harder.",
+        "author": "Issa Rae"
+    },
+    {
+        "quote": "It’s not the load that breaks you down, it’s the way you carry it.",
+        "author": "Lena Horne"
+    },
+    {
+        "quote": "You define your own life. Don’t let other people write your script.",
+        "author": "Oprah Winfrey"
+    },
+    {
+        "quote": "There is no substitute for hard work.",
+        "author": "Thomas Edison"
+    },
+    {
+        "quote": "Don’t be afraid to be ambitious about your goals. Hard work never stops. Neither should your dreams.",
+        "author": "Dwayne “The Rock” Johnson"
+    },
+    {
+        "quote": "When you undervalue what you do, the world will undervalue who you are.",
+        "author": "Oprah Winfrey"
+    },
+    {
+        "quote": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+        "author": "Henry David Thoreau"
+    },
+    {
+        "quote": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+        "author": "Roy T. Bennett"
+    },
+    {
+        "quote": "You don't make progress by standing on the sidelines, whimpering and complaining. You make progress by implementing ideas.",
+        "author": "Shirley Chisholm"
+    },
+    {
+        "quote": "Make your life a masterpiece; imagine no limitations on what you can be, have or do.",
+        "author": "Brian Tracy"
+    },
+    {
+        "quote": "Our greatest glory is not in never falling, but in rising every time we fall.",
+        "author": "Confucius"
+    },
+    {
+        "quote": "Never be limited by other people’s limited imaginations.",
+        "author": "Dr. Mae Jemison"
+    },
+    {
+        "quote": "Success is doing ordinary things extraordinarily well.",
+        "author": "Jim Rohn"
+    },
+    {
+        "quote": "You don’t have to be great to start, but you have to start to be great.",
+        "author": "Zig Ziglar"
+    },
+    {
+        "quote": "Keep your face always toward the sunshine—and shadows will fall behind you.",
+        "author": "Walt Whitman"
+    },
+    {
+        "quote": "I’m deliberate and afraid of nothing.",
+        "author": "Audre Lorde"
+    },
+    {
+        "quote": "Your time is limited, so don’t waste it living someone else’s life.",
+        "author": "Steve Jobs"
+    },
+    {
+        "quote": "Hard things will happen to us. We will recover. We will learn from it. We will grow more resilient because of it.",
+        "author": "Taylor Richardson"
+    }
+      
+      
   ]
   
