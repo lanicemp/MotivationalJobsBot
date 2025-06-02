@@ -4,6 +4,8 @@ const axios = require('axios');
 const cron = require('node-cron');
 
 const webhookUrl = process.env.SLACK_WEBHOOK_URL;
+const webhookUrlSecond = process.env.SLACK_WEBHOOK_URL_SECOND;
+
 
 const messages = {
   1: ":sparkles: *Monday Motivation*  \n  \n  Drop a :white_check_mark: if you’ve added at least 5 jobs today!\n:first_place_medal: Everyone should aim for *25 jobs by 7:30 PM* tonight!",
@@ -34,13 +36,20 @@ function getRandomMotivationalQuote() {
     } catch (err) {
       console.error("❌ Failed to send message:", err.message);
     }
+    try {
+      await axios.post(webhookUrlSecond, { text: message });
+      console.log(`✅ Message sent to second channel for day ${today}`);
+    } catch (err) {
+      console.error("❌ Failed to send message to second channel:", err.message);
+    }
   };
   
 
 // ⏰ Scheduled daily at 10:00 AM
-cron.schedule('40 18 * * *', () => {
-    sendDailyMessage();
-  });
+// cron.schedule('40 18 * * *', () => {
+ // console.log("⏰ Running scheduled job at 18:40");
+//     sendDailyMessage();
+//   });
 
 // Uncomment below for immediate test
-// sendDailyMessage(7);
+sendDailyMessage();
