@@ -57,12 +57,12 @@ function getRandomMotivationalQuote() {
     } catch (err) {
       console.error("❌ Failed to send message:", err.message);
     }
-    // try {
-    //   await axios.post(webhookUrlSecond, { text: message });
-    //   console.log(`✅ Message sent to second channel for day ${today}`);
-    // } catch (err) {
-    //   console.error("❌ Failed to send message to second channel:", err.message);
-    // }
+    try {
+      await axios.post(webhookUrlSecond, { text: message });
+      console.log(`✅ Message sent to second channel for day ${today}`);
+    } catch (err) {
+      console.error("❌ Failed to send message to second channel:", err.message);
+    }
   };
   
 
