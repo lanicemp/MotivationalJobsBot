@@ -67,7 +67,7 @@ function getRandomMotivationalQuote() {
   
 
 // ⏰ Scheduled daily at 10:00 AM
-cron.schedule('20 11 * * *', () => {
+cron.schedule('50 11 * * *', () => {
   console.log("⏰ Running scheduled job at 11:00 AM");
   sendDailyMessage();
  });
