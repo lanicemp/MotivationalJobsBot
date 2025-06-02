@@ -2,10 +2,31 @@ require('dotenv').config();
 const quotes = require('./quotes.json');
 const axios = require('axios');
 const cron = require('node-cron');
+const express = require('express');
+const app = express();
 
 const webhookUrl = process.env.SLACK_WEBHOOK_URL;
 const webhookUrlSecond = process.env.SLACK_WEBHOOK_URL_SECOND;
 
+if (!webhookUrl || !webhookUrlSecond) {
+  console.error("❌ Missing Slack webhook URLs in .env file. Please set SLACK_WEBHOOK_URL and SLACK_WEBHOOK_URL_SECOND.");
+  process.exit(1);
+}
+
+app.get('/trigger', async (req, res) => {
+  try {
+    await sendDailyMessage();
+    res.status(200).send('✅ Motivational Jobs Bot message sent!');
+  } catch (err) {
+    console.error("❌ Error on /trigger:", err.message);
+    res.status(500).send('❌ Failed to send message.');
+  }
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🚀 Express server running on port ${PORT}`);
+});
 
 const messages = {
   1: ":sparkles: *Monday Motivation*  \n  \n  Drop a :white_check_mark: if you’ve added at least 5 jobs today!\n:first_place_medal: Everyone should aim for *25 jobs by 7:30 PM* tonight!",
@@ -36,20 +57,20 @@ function getRandomMotivationalQuote() {
     } catch (err) {
       console.error("❌ Failed to send message:", err.message);
     }
-    try {
-      await axios.post(webhookUrlSecond, { text: message });
-      console.log(`✅ Message sent to second channel for day ${today}`);
-    } catch (err) {
-      console.error("❌ Failed to send message to second channel:", err.message);
-    }
+    // try {
+    //   await axios.post(webhookUrlSecond, { text: message });
+    //   console.log(`✅ Message sent to second channel for day ${today}`);
+    // } catch (err) {
+    //   console.error("❌ Failed to send message to second channel:", err.message);
+    // }
   };
   
 
 // ⏰ Scheduled daily at 10:00 AM
-// cron.schedule('40 18 * * *', () => {
- // console.log("⏰ Running scheduled job at 18:40");
-//     sendDailyMessage();
-//   });
+cron.schedule('0 11 * * *', () => {
+  console.log("⏰ Running scheduled job at 11:00 AM");
+  sendDailyMessage();
+ });
 
 // Uncomment below for immediate test
-sendDailyMessage();
+// sendDailyMessage();
