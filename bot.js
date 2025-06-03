@@ -67,10 +67,10 @@ function getRandomMotivationalQuote() {
   
 
 // ⏰ Scheduled daily at 10:00 AM
-cron.schedule('0 10 * * *', () => {
-  console.log("⏰ Running scheduled job at 11:00 AM");
-  sendDailyMessage();
- });
+// cron.schedule('0 10 * * *', () => {
+//   console.log("⏰ Running scheduled job at 11:00 AM");
+//   sendDailyMessage();
+//  });
 
 // Uncomment below for immediate test
-// sendDailyMessage();
+sendDailyMessage();
